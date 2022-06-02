@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css"></link>
     <title>Document</title>
 </head>
@@ -12,31 +12,28 @@
     <div class="container">
         <h1>Rock Paper Scissors Game</h1>
         <div class="choices-container">
-            <button class="btn rock-btn">
-                <img src="images/rock.jpg" alt="rock">
-            </button>
+            <div class="card-image" data-image="rock">
+                <img src="images/rock.jpg" alt="rock" class="image"/>
+            </div>
 
-            <button class="btn paper-btn">
-                <img src="images/paper.png" alt="paper">
-            </button>
+            <div class="card-image" data-image="paper">
+                <img src="images/paper.png" alt="paper" class="image"/>
+            </div>
 
-            <button class="btn scissors-btn">
-                <img src="images/scissors.jpg" alt="scissors">
-            </button>
+            <div class="card-image" data-image="scissors">
+                <img src="images/scissors.jpg" alt="scissors" class="image"/>
+            </div>
         </div>
-        
+
+        <div class="results"></div>
+
         <div class="score-container">
-            <div class="player-score-container">
-                Player: 0 Points
+            <div class="player-score">
+            Player: 0 Points
             </div>
-
-            <div class="computer-score-container">
-                Computer: 0 Points
+            <div class="computer-score">
+            Computer: 0 Points           
             </div>
-        </div>  
-
-        <div class="results-container">
-            Winner: 
         </div>
     </div>
 </body>
